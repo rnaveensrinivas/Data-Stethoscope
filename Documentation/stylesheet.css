@@ -1,0 +1,49 @@
+body{ 
+    background: url(Minimalistic_cheddi.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(0, 0, 0); 
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    color: rgb(0, 0, 0);
+    
+}
+h1,h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+.title{
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: left;
+    
+    
+}
+
+    
+
+
+
+
+.homepage_div{
+
+
+    margin-right: 30%;
+    margin-top: 5%;
+    margin-left: 10%;
+    text-align : center;
+    border-radius: 25px;
+    background: rgb(130, 192, 121);
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+
+}

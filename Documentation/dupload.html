@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            Upload A file
+        </title>
+
+        <style>
+
+        .align{
+                text-align: center;
+                
+        }
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        </style>
+    </head>
+    <link rel='stylesheet' type='text/css' href='table.css' />
+    <form method="POST" action="d_upload.php" enctype="multipart/form-data">
+        <div >
+            <h1 id="rec">Records</h1>
+            <table id="upload">
+                
+                <tr>
+                 <td><label for="sno">S.no:</label></td>
+                 <td><input type="text" name="sno" id="sno" size="40%" style="line-height: 20px; border-radius: 5px;"></td>   
+                </tr>
+                <br>
+                <br>
+    
+                <tr>
+                    <td><label for="date">Date:</label></td>
+                    <td><input type="date" name="date" id="date" style="border-radius: 5px;">  </td> 
+                </tr>
+                <br>
+                <br>
+    
+                <tr>
+                    <td><label for="file">File name:</label></td>
+                    <td><input type="file" name="file" id="file"></td>
+                </tr>
+                <br>
+                <br>
+                <tr colspan="2" class="align">
+                    <td><input type="submit" name="submit" value="Submit" class="button" style="margin-left: 125%"></td>
+                </tr>
+               
+                
+            </table>
+        </div>
+    </form>
+    <body>
+        
+    </body>
+
+
+</html>
