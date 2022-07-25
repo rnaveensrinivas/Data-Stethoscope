@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost","root","","data_stethoscope");
+$conn = mysqli_connect("localhost","root","","data_stethoscope"); 
 
 if(!$conn)
 {
@@ -8,7 +8,7 @@ if(!$conn)
 
 }
 
-$pnum = $_POST['pnum'];
+$pnum = $_POST['pnum']; 
 $ppassword = $_POST['ppassword'];
 $tablename = "P_".$pnum;
 

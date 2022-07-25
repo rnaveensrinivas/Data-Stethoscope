@@ -1,17 +1,17 @@
 <?php
-$conn = mysqli_connect("localhost","root","","data_stethoscope");
+$conn = mysqli_connect("localhost","root","","data_stethoscope"); // establishing a connection. 
 
-if(!$conn)
+if(!$conn) // if connection is not made then print this error. 
 {
     echo "<h1>failed</h1>";
 
 }
 
-//error reporting 
+//error reporting :The quickest way to display all php errors and warnings is to add these lines to your PHP code file:
 ini_set ("display_errors", "1");
 error_reporting(E_ALL);
 
-
+// if the form is submitted then do the following. 
 if(isset($_POST['submit']))
 {
     $pname = $_POST['pname'];
@@ -22,7 +22,7 @@ if(isset($_POST['submit']))
     $pblood = $_POST['pblood'];
     $filename = $_FILES['pid']['name'];
     $tempname = $_FILES['pid']['tmp_name'];
-    $folder = "uploads/patient/".$filename;
+    $folder = "uploads/patient/".$filename; 
 
     $query = "INSERT INTO patient(pname,page,pid,pemail,pnum,ppassword,pblood) values('$pname','$page','$filename','$pemail','$pnum','$ppassword','$pblood')";
     $run = mysqli_query($conn,$query);

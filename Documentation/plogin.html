@@ -3,18 +3,18 @@
     <head>
         <title>Patient Login</title>
         <style>
-             table,tr,td{
-                border: 2px double black;
-                border-collapse: collapse;
-                margin-left: auto;
+             table,tr,td{ /* using table for some structure*/
+                border: 2px double black; 
+                border-collapse: collapse; /* yes the border is collapsed */
+                margin-left: auto; /* for aligning the table at center */
                 margin-right:auto; 
-                margin-top: 1%;
+                margin-top: 1%; /* dead code */
                 
             }
     
             
-        h1{
-                text-align: center;
+        h1{ /* alignment issue */
+                text-align: center; /* doesn't matter. */
                 color:black;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
@@ -22,7 +22,7 @@
         .align{
                 text-align: center;
         }
-        div{
+        div{ /* could have just used stylesheet.css */
             border-radius: 25px;
             background: rgb(130, 192, 121);;
             padding: 20px;
@@ -43,8 +43,8 @@
         </style>
     </head>
     <body>
-        <form method="POST" action="p_login.php">
-       <div class="loginpg">
+        <form method="POST" action="p_login.php"> <!-- redirecting to this php page for server validation. -->
+       <div class="loginpg"> <!-- there is no need of mentioning this, cause anyways we are chaning div in style. -->
             <h1 style="text-align:center">PATIENT LOGIN</h1>
             <table>
                 <tr>

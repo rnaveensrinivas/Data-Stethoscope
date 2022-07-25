@@ -7,16 +7,14 @@
 
             table,tr,td,th{
                
-                border-collapse: collapse;
-                margin-left: auto;
+                border-collapse: collapse; /* dead code, since the table itself is not visible.*/
+                margin-left: auto; /* contents inside will be auto aligned */
                 margin-right:auto; 
-                height: 100%;
-                padding-top: 15px;
+                height: 100%; /* automatically updates itself. */
+                padding-top: 15px; /* after padding how much to align. */
                 padding-left: 15px;
                 padding-bottom: 15px;
                 
-               
-
             }
           
             th{
@@ -55,10 +53,10 @@
 
     <body>
         
-        <form method="POST" action="p_signup.php" enctype="multipart/form-data">
+        <form method="POST" action="p_signup.php" enctype="multipart/form-data"> <!-- for encoding purpose, how data is sent. plain/text is used for debugging purpose only, they aren't reliable. -->
             <h1>Patient Signup</h1>
             <table>
-                <tr><th colspan="2">Please enter your details correctly</th></tr>
+                <tr><th colspan="2">Please enter your details correctly</th></tr> <!-- correctly can be removed.-->
                 
                 <tr>
                     <td><label for="pname">Name:</label></td>
