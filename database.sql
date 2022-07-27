@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: May 29, 2021 at 06:22 PM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 8.0.6
+-- Host: 127.0.0.1
+-- Generation Time: Jul 27, 2022 at 08:31 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,7 +42,8 @@ CREATE TABLE `doctor` (
 --
 
 INSERT INTO `doctor` (`dname`, `dage`, `did`, `demail`, `dnumber`, `dpwd`, `dspec`) VALUES
-('naveen', '2021-05-12', 'Pract1.png', 'naveen@gmail.com', '9876543210', 'asdfg', 'pedia');
+('Ajay', '1996-06-06', 'doc1Aadhaar.png', 'ajay@doctor.com', '1234567891', 'asdf', 'Ortho'),
+('Rithvik', '1985-03-01', 'doc2Aadhaar.jpg', 'rithvik@doctor.com', '1234567892', 'asdf', 'Opthal');
 
 -- --------------------------------------------------------
 
@@ -65,7 +66,28 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`pname`, `page`, `pid`, `pemail`, `pnum`, `ppassword`, `pblood`) VALUES
-('pavan', '2021-05-20', 'Pract1.png', 'pavan@hgk.vvom', '1234567890', 'asdfg', 'A+');
+('Naveen ', '2003-06-04', 'pat1Aadhaar.jpg', 'naveen@patient.com', '1234567890', 'asdf', 'A+');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `p_1234567890`
+--
+
+CREATE TABLE `p_1234567890` (
+  `date` date DEFAULT NULL,
+  `filename` varchar(100) DEFAULT NULL,
+  `dname` varchar(100) DEFAULT NULL,
+  `dnum` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `p_1234567890`
+--
+
+INSERT INTO `p_1234567890` (`date`, `filename`, `dname`, `dnum`) VALUES
+('2022-07-25', 'pres1.png', 'Ajay', '1234567891'),
+('2022-07-28', 'pres2.jpg', 'Rithvik', '1234567892');
 
 --
 -- Indexes for dumped tables

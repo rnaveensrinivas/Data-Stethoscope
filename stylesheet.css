@@ -1,49 +1,73 @@
-body{ 
-    background: url(Minimalistic_cheddi.jpg) no-repeat center center fixed; 
+body {
+    background: url(Minimalistic_cheddi.jpg) no-repeat center fixed;
+    /*  The background of the homepage. no repeat sets the background with only one pic, and doesn't allow that pic to be repeated. center aligns the pic to center of the page. fixed doesn't allow the picture to move when scrolling. */
+
+    /*below four statements are like a single statement. They all function together. */
+    /*remove all four the enter background picture doesn't get aligned */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: rgb(0, 0, 0); 
+
+
+    /* color: rgb(0, 0, 0); By default it will take black color conly. */
 
     text-align: center;
+    /* center align all text to center,if not all pushed to left */
     font-family: Arial, Helvetica, sans-serif;
-   
-    color: rgb(0, 0, 0);
-    
+
+
 }
-h1,h2{
+
+table,
+tr,
+td {
+    border: 2px double black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+
+}
+
+h1,
+h2 {
+    /*font for the values present on headings in home page. */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
 }
-button{
+
+button {
+    /*font for the values present on button */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
 }
-.title{
-    margin-right: 20%;
+
+.title {
+
+    /*margin-right: 20%; margin controls spacing outside element. */
     margin-left: 20%;
+    /*start left side from 20%of page. */
     text-align: left;
-    
-    
+    /* place this from the start of 20%*/
+
 }
 
-    
+div {
 
 
-
-
-.homepage_div{
-
-
-    margin-right: 30%;
+    /*margin-right: 30%;*/
     margin-top: 5%;
+    /*brings the box down*/
     margin-left: 10%;
-    text-align : center;
+    /*gives some space left*/
+    /*text-align : center; since this is already present in body definition above.*/
     border-radius: 25px;
+    /*brings in corner curvature.*/
     background: rgb(130, 192, 121);
     padding: 20px;
+    /* distance between content and border controls the spacing within an element */
+
     width: 500px;
+    /* giving the box dimensions. */
     height: 300px;
 
 }

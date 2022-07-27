@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Patient Login</title>
-        <style>
-             table,tr,td{
-                border: 2px double black;
-                border-collapse: collapse;
-                margin-left: auto;
-                margin-right:auto; 
-                margin-top: 1%;
-                
-            }
-    
-            
+
+<head>
+    <title>Patient Login</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!-- <style>
+        table,tr,td{
+            border: 2px double black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right:auto; 
+            margin-top: 1%;    
+        }            
         h1{
-                text-align: center;
-                color:black;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+            text-align: center;
+            color:black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         .align{
-                text-align: center;
+            text-align: center;
         }
         div{
             border-radius: 25px;
@@ -40,32 +39,32 @@
             -o-background-size: cover;
             background-size: cover;
         }
-        </style>
-    </head>
-    <body>
-        <form method="POST" action="p_login.php">
-       <div class="loginpg">
-            <h1 style="text-align:center">PATIENT LOGIN</h1>
+        </style> -->
+</head>
+
+<body>
+    <form method="POST" action="p_login.php">
+        <div> <!-- green box. -->
+            <h1>PATIENT LOGIN</h1>
             <table>
                 <tr>
                     <td><label for="pnum">Phone number: </label></td>
-                    <td><input type="text" id="pnum" name="pnum" placeholder="Enter phone number"></td>
-                    <br>
-                    <br>
+                    <td><input type="text" id="pnum" name="pnum" placeholder="Enter phone number" required></td>
                 </tr>
                 <tr>
                     <td><label for="ppassword">Password: </label></td>
-                    <td><input type="password" id="ppassword" name="ppassword" placeholder="Enter password"></td>
-                    <br>
+                    <td><input type="password" id="ppassword" name="ppassword" placeholder="Enter password" required></td>
+                    <br> <!-- for aligning in center-->
                     <br>
                 </tr>
                 <tr>
-                    <td colspan="2" class="align">
-                        <input type="submit" name="submit" value="Submit" required>
+                    <td colspan="2" >
+                        <input type="submit" name="submit" value="Submit">
                     </td>
                 </tr>
+            </table>
         </div>
-        </body>
     </form>
-    </body>
+</body>
+
 </html>
